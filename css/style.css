@@ -982,3 +982,42 @@ span{
     padding-right: 20px;
   }
 }
+
+
+.box{
+  background-color: rgb(0, 0, 0);
+  width: 340px;
+  height: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box input{
+  margin: 10px 0;
+  height: 40px;
+}
+
+.inpttxt{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: #eee;
+  border-bottom: solid 0.5px;
+  color: #eee;
+  background-color: black;
+}
+.inptfile{
+  color: #eee;
+}
+
+.btn{
+  background-color: rgb(145, 92, 215);
+  color: #eee;
+  border-radius: 30px;
+  margin-top: 80px;
+  /* width: 80px; */
+  
+}
