@@ -2,7 +2,7 @@
     require_once 'include/database.php'; 
 
     session_start();
-    $_SESSION['admin'];
+    // $_SESSION['admin'];
 ?>
 
 <!DOCTYPE html>
@@ -50,7 +50,11 @@
                 if(isset($_POST['AddCollection'])){
                     $nameC = $_POST['nameC'];
                     $nameA = $_POST['nameA'];
-                    session_start();
+                    
+                    if(!isset($_SESSION)) 
+                    { 
+                        session_start(); 
+                    } 
                     $idUser = $_SESSION['admin']['idAdmin'];
                     // echo $idUser;
 
